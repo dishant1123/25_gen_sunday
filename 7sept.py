@@ -95,20 +95,23 @@ l1= [[1,2,3],
 2 col sum : 15 
 3 col sum : 18
 """
-
 """
-for i in range(len(l1[0])) :   # 1 2 3 
+l1= [[1,2,3],    
+     [4,5,6], 
+     [7,8,9]]
+"""
+# print(len(l1[0]))
+"""for i in range(len(l1[0])) :   #1,3  
     sum =0
     rowsum =0  
-    for j in range(len(l1)):   # 0  3 
-        sum =sum + (l1[j][i])   # l1[0][1] 
-        rowsum =rowsum + l1[i][j]   # l1[0][1]
+    for j in range(len(l1)):   # 2,3 
+        sum =sum + (l1[j][i])   # colsum =12 
+        rowsum =rowsum + l1[i][j]   # rowsum = 6
     print(sum)
     print(rowsum)
 """
 
 # tuple : immutable  not changes  in tuple . 
-
 
 """t1=(1,2,3,4,5,6,7,8,9,10,"kishan",6j,True)
 
@@ -178,13 +181,26 @@ b.(1,2,3,4,[67,89,90],"saloni",99)
 c.(1,2,3,4,[67,89,90,"saloni"],99)   # c d d m  c c  
 d.none 
 """ 
-t1=(1,2,3,4,[1,2,3],99)
+"""t1=(1,2,3,4,[1,2,3],99)
 #   0 1 2 3  4          5 
 
 t1[4].append("saloni")
 print(t1) 
+"""
 # 1,2,3,4 ,99  ==> tuple    [1,2,3]
 
 
 # raj    vidhya  kishan    rohit      dev    daksh   meet   
 # pari   pratham  riya      param 
+
+
+"""sample_list = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+l2 = []
+for t in sample_list:
+    l1 = list(t)
+    l1[-1] = 100
+    t = tuple(l1)
+    l2.append(t)
+print(l2)
+"""
