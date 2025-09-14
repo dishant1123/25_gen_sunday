@@ -44,7 +44,7 @@ print(d1)
 
 # method  : 
 
-d1={"raj":90,"simran":89,"rohit":88}
+# d1={"raj":90,"simran":89,"rohit":88}
 
 """d1.clear()
 print(d1)
@@ -68,7 +68,7 @@ print(d2)
 d1.update(d2)
 print(d1)
 """
-d1={"raj":90,"simran":89,"rohit":88,"dev":99}
+# d1={"raj":90,"simran":89,"rohit":88,"dev":99}
 
 """d1.pop("raj")  # key ==> remove  
 print(d1)
@@ -81,3 +81,30 @@ print(d1)
 d1.setdefault("raj",99)
 print(d1)
 """
+
+"""
+task  :1 
+ask user to  enter the  5 student  name  and  marks  store in to the dict. 
+
+ram 90  sita  88  laxman 78 baldev 56  bhudev 23
+output  :d1={"ram":90,"sita":88,"laxman":78,"baldev":56,"bhudev":23}
+
+"""
+
+d1={}
+
+for i in range(3) :
+    name =input("enter the  name :")
+    marks =int(input("enter the  marks :"))
+    d1[name] =marks
+print(d1)   # {'dev': 90, 'daksh': 67, 'rohit': 99}
+
+sorted_marks =sorted(d1.values())
+print(sorted_marks)   # [67 90, 99]
+
+d2={} 
+for j in sorted_marks:   # # [67 90, 99]  # j =67 
+    for name , marks in d1.items() :  ## {'dev': 90, 'daksh': 67, 'rohit': 99}
+        if j ==marks : 
+            d2[name]=j
+print(d2)
