@@ -108,3 +108,14 @@ for j in sorted_marks:   # # [67 90, 99]  # j =67
         if j ==marks : 
             d2[name]=j
 print(d2)
+
+
+"""
+HW :
+
+3. Make a Python program to count letters of the word: MISSISSIPPI. 
+Your program should store them in a dictionary as: {"M":1, "I":4, "S":4, "P":2}. Next, generalize this program for any word entered by user."""
+
+# 4.result = {'Science': [88, 89, 62, 95, 50], 'Language': [77, 78, 84, 80, 60]}
+# Expected Output: [{'Science': 88, 'Language': 77}, {'Science': 89, 'Language': 78}, {'Science': 62, 'Language': 84}, {'Science': 95, 'Language': 80}]
+
