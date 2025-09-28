@@ -86,3 +86,35 @@ output : my_name is yash_patel.
 
 """
 
+"""
+s1="my name is yash patel."
+
+modify_string =s1.replace(" ","_",1)[: : -1].replace(" ","_",1)[ : : -1]
+print(modify_string)
+"""
+
+s2="my name is yash patel."
+
+"""print(s2.count("a"))
+print(s2.count("a",5,20))
+"""
+
+# task  :4 
+"""
+input : i love python programming language.
+
+output  : count of letter :35 
+          count of words : 5 
+          longest word: programming  
+"""
+"""
+s3="i love python programming language."
+count_letter= len(s3)
+count_words = len(s3.split())  # ["i","love","python","programming","language."] 
+logest_word =max(s3.split(),key=len)
+
+print("count of letter :",count_letter)
+print("count of words :",count_words)
+print("longest word :",logest_word)
+
+"""
