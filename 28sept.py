@@ -59,3 +59,30 @@ ouput  : first  o index number  :6
          third  o index number  :15 
          fourth  o index number  :24
 """
+
+# replace : 
+
+"""s1="my name is is rohit thakkar."
+
+print(s1.replace("is"," "))
+print(s1.replace("is"," ",1))
+print(s1.replace("is"," ",2))
+print(s1.replace("is"," "))
+"""
+
+# task  : 2 
+"""
+second "r" replace with "@"
+input :  restart 
+output : resta@t
+
+"""
+#task  :3 
+"""
+ask user to enter the string  replace the firs space with "_" and  last space  with "_". 
+
+input  : my nam is yash patel. 
+output : my_name is yash_patel.
+
+"""
+
