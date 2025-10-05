@@ -122,3 +122,130 @@ task  : 6 Write a Python program to count the number of strings from a given lis
 	Expected Result : 2
 
 """
+# adv  list / list  comprehensive  : 
+
+"""
+l1= [[[1,2],
+     [3,4],
+     [5,6]]] # 2*3 matrix : 
+print(l1)
+
+for i in l1 : 
+    print(i)
+"""
+
+# numpy : python  ==> use matrix , array  == > pip install  numpy 
+
+import numpy as np    # ==> np access  
+
+"""l1= [[1,2,3],
+     [4,5,6],
+     [7,8,9]] # 3*3 matrix : 
+print(l1)
+"""
+"""
+matrix :
+R  C
+(0,0) 1 (0,1)2 (0,2)3 
+(1,0) 4 (1,1)5 (1,2)6 
+(2,0) 7 (2,1)8 (2,2)9
+"""
+"""print(l1[0])
+print(l1[0] [1:3])
+print(l1[2] [2:3])
+print(l1[1] [-2])
+"""
+
+# creating array  with numpy : 
+# 1 d array  : 
+"""
+a= np.array([1,2,3,4,5,6,7,8,9])
+print("array :",a)
+"""
+# a=[10,20]
+# print(a)
+
+"""print(a)
+print(a[2:4])
+print(a[1:-1])
+print(a[-1])
+print(a[2:8:2])
+"""
+# matrix  using  numpy :
+
+a= np.array([[1,2,3],[4,5,6],[7,8,9]])
+# print(a)
+"""
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+"""
+"""
+print(a[0])
+print(a[ :,1])
+print(a[1,:])
+"""
+# print(a[1:2,0:3:2])
+# c 5 6  r    v    r    t    r 5 
+
+"""b= np.array([True,False,True,False,True],dtype=int)
+print(b)
+"""
+
+a= np.array([[1,2],[3,4]])
+print(a)
+b= np.array([[5,6],[7,8]])
+print(b)
+
+print(a+b)
+print(a*b)
+
+print(np.min(a))
+print(np.min(b))
+print(np.sum(a))
+
+"""
+a            b 
+[[1 2]      [[5,6]]
+ [3 4]]      [7,8]]  
+"""
+
+# c = np.array((2,3))
+# print(c)
+
+c= np.zeros((2,3))
+print(c)
+
+d= np.ones((3,3))
+print(d)
+
+f=np.eye(3,dtype=int)  # identity matrix 
+print(f)
+
+"""
+g = np.arange(1,7).reshape((2,3))
+h = np.arange(11,20).reshape((3,3))
+print(g)
+print(h)
+"""
+"""
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+[[11 12 13]
+ [14 15 16]
+ [17 18 19]]
+"""
+# print(g+h)
+# print(np.matmul(g,h))
+
+e = np.array([1,2,3,4,5,6])
+
+g =np.where(e>5)  # condition 
+print(g)
+
+t =np.linspace(1,10,5)
+print(t)
+# 10-1 / 5-1  = 
+
+# end -start / number - start  
