@@ -105,7 +105,37 @@ print(list(l2))
 
 # frozen set : immutable 
 
-fz = frozenset({1,2,3,4,55,55,6})
+"""fz = frozenset({1,2,3,4,55,55,6})
 print(fz)
 
 print(type(fz))
+
+"""
+
+"""a = [1, 2, 3]
+print(a.insert(1,12))
+print(a)
+"""
+
+"""s = "Python"
+s = s[::-2]
+print(s)
+"""
+
+"""d = dict.fromkeys(['a', 'b'], [])
+d['a'].append(1)
+print(d)
+"""
+"""a = {1, 2, 3}
+b = {2, 3, 4}
+print(a & b)
+"""
+
+# a =set([[1,2,3],[2,3,4]])
+for i  in range(10):
+    if i == 5:
+            continue
+    else:
+            print(i)
+else:
+      print("Here")  
