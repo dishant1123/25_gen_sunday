@@ -60,17 +60,55 @@ if sum ==n :
 """
 
 # nested for  loop  : 
-start = int(input("enter the start  : "))
+"""start = int(input("enter the start  : "))
 end = int(input("enter the end  : "))
 
 
 for i in range(start,end+1):  # 100  10000 
-    sum =0 
+    digits = len(str(i))
     temp =i 
-    digit = len(str(temp)) 
-    while temp >0 :
-        r=  temp %10 
-        sum = sum + pow(r,digit)
+    sum =0 
+
+    for j in range(digits):
+        r= temp %10
+        fact =1 
+        while r >0 :
+            fact =fact *r
+            r-=1
+        sum =sum +fact
         temp   = temp //10 
     if sum ==i :
-        print(i,"is a amg number")
+        print(i,"is a strong number")
+"""
+# pattern  : 
+
+"""
+1.          2.          3.            4.          5.           6. 
+
+* * * * *   *           * * * * *     1           5 4 3 2 1    1 2 3 4 5  
+* * * * *   * *         * * * *       1 2         5 4 3 2      2 3 4 5 
+* * * * *   * * *       * * *         1 2 3       5 4 3        3 4 5 
+* * * * *   * * * *     * *           1 2 3 4     5 4          4 5
+* * * * *   * * * * *   *             1 2 3 4 5   5            5 
+"""
+
+# 1: 
+"""
+for i in range(5):  
+    for j in range(5):
+        print("*",end=" ")
+    print()
+"""
+#2: 
+
+"""
+for i in range(1,6):  
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+"""
+#3: 
+for i in range(5):  
+    for j in range(5,i,-1):
+        print("*",end=" ")
+    print()
