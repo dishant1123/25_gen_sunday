@@ -189,7 +189,7 @@ for i in range(1,6):
 
 # 10 : full pyramid
 
-for i in range(1,6): 
+"""for i in range(1,6): 
     for k in range(5,i,-1):
         print(" ",end="")
     for j in range(1,i+1):
@@ -201,3 +201,47 @@ for i in range(1,6):
     for j in range(5,i-1,-1):
         print("*",end=" ")
     print()
+"""
+
+
+# 11 :        12 :       13 :           14 : 
+"""
+* * * * *     *            * * * * *         *
+*       *     * *          *     *          * * 
+*       *     *   *        *   *           *   * 
+*       *     *     *      * *            *     * 
+* * * * *     * * * * *    *             * * * * *
+"""
+
+#11 : 
+"""for i in range(5):  
+    for j in range(5):
+        if i==0 or i==4  or j==0 or j==4 :
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
+"""
+
+#12 : 
+"""
+for i in range(1,6):  
+    for j in range(1,i+1):
+        if j==1 or i ==5 or i==j:
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
+"""
+
+#13 : 
+
+"""
+for i in range(5,0,-1):  
+    for j in range(1,i+1):
+        if i==1 or j==1 or i==j or i==5:
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
+"""
