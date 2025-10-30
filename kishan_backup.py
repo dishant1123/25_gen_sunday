@@ -245,3 +245,64 @@ for i in range(5,0,-1):
             print(" ",end=" ")
     print()
 """
+
+# string  : immutable  ==> no change in  string  . 
+
+"""
+s1="my name is kishan."
+print(s1)
+print(type(s1))
+"""
+
+# built in function  : len min max sorted sum 
+
+"""
+s1 = "my name is kishan."
+print(len(s1))
+print(min(s1))  # ascci value  
+print(max(s1))  # ascci value
+print(sorted(s1))  # list
+"""
+
+# slicing  : 
+s1 = "my name is kishan."
+#index: 012     
+"""
+s1[0] ="patel"
+print(s1)  # immutable  not changes in string 
+"""
+"""print(s1[0])
+print(s1[2])
+print(s1[2 :5])
+
+print(s1[ :9])
+print(s1[2 :])  # l to r 
+
+print(s1[-2])  # r to  l 
+print(s1[-5 :-1])
+print(s1[5 :-1])
+print(s1[-5 :1]) # no  output 
+
+print(s1[1 :10 :2])
+print(s1[  :  :-1])
+"""
+
+# method : 
+
+s1="my name is kishan."
+
+"""print(s1.capitalize())
+print(s1.lower())
+print(s1.upper())
+print(s1.title())
+print(s1.casefold())
+print(s1.swapcase())
+"""
+
+"""s2="happy diwali"
+print(s2.center(50,"*"))
+print(s2.rjust(50,"*"))
+print(s2.ljust(50,"*"))
+"""
+print(s1.count("i"))
+print(s1.count("i",10,20))
