@@ -304,5 +304,56 @@ print(s2.center(50,"*"))
 print(s2.rjust(50,"*"))
 print(s2.ljust(50,"*"))
 """
-print(s1.count("i"))
+"""print(s1.count("i"))
 print(s1.count("i",10,20))
+"""
+
+# task  :1 
+"""
+input  : dishant dipakkumar shah 
+ouptut : d.d.shah
+"""
+
+# task :2 
+"""
+ask user  to enter the two string and swap the  first three character of second  string with first three character of first string. 
+
+input  a : color 
+input  b : full 
+output a : fulor 
+output b : coll
+"""
+
+# index ,find  : 
+
+s1="my name is kishan."
+
+"""print(s1.index("i"))
+print(s1.index("a"))
+print(s1.index("name"))
+print(s1.index("ame"))
+print(s1.index("a",5,20))
+
+print(s1.find("i"))
+print(s1.find("a"))
+print(s1.find("name"))
+print(s1.find("ame"))
+print(s1.find("a",5,20))"""
+
+# rindex , rfind  : r to l  ==> pos 
+print(s1.rindex("a"))
+print(s1.rindex("i"))
+print(s1.rindex("a",2,15))
+
+print(s1.rfind("a"))
+print(s1.rfind("i"))
+
+# task  :3 
+"""
+input : i am going to goa next month. 
+ouptut : first "o" index number is  :6
+        second "o" index number is  :12
+        third "o" index number is  :15
+        fourth "o" index number is  :24
+
+"""
