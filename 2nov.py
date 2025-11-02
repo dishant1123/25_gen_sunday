@@ -106,3 +106,42 @@ input : "i am going to goa next month."
 output  : o index 
 
 """
+
+# count  : 
+
+s1="my name is rohit thakkar."
+
+"""print(s1.count("a"))
+print(s1.count("a",6))  # 3 arg  :  letter  strart stop  
+"""
+
+# spilt  ,  rspilt , partition , rpartiton : 
+
+s1="my name is rohit thakkar."
+"""
+print(s1.split())  # list 
+print(s1.split("a"))
+print(s1.split("is"))
+
+print(s1.rsplit("a"))
+print(s1.rsplit("is"))
+"""
+# hw  : diff between split  and  rspilt : 
+
+"""print(s1.partition(" ")) # tuple  ==> 3 part
+print(s1.partition("r")) 
+print(s1.partition("a")) 
+
+print(s1.rpartition("a"))
+"""
+
+# task  :4 
+"""
+Write a python program that take one input string and in output count the no of words,
+Find No of letters in String,Find the longest word in the String.
+For Example:-
+Input:-This is the python program
+Output:-No of Words=5
+	    No of letters=26(including whitespace)
+	    Longest Word=program
+"""
