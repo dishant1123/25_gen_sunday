@@ -341,13 +341,13 @@ print(s1.find("ame"))
 print(s1.find("a",5,20))"""
 
 # rindex , rfind  : r to l  ==> pos 
-print(s1.rindex("a"))
+"""print(s1.rindex("a"))
 print(s1.rindex("i"))
 print(s1.rindex("a",2,15))
 
 print(s1.rfind("a"))
 print(s1.rfind("i"))
-
+"""
 # task  :3 
 """
 input : i am going to goa next month. 
@@ -357,3 +357,10 @@ ouptut : first "o" index number is  :6
         fourth "o" index number is  :24
 
 """
+
+for i in range(10):
+    if i == 5:
+        pass
+    
+else:
+    print("Here")

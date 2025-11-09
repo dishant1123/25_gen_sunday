@@ -2,12 +2,11 @@
 """for num in range(-5,2,2):
     print(num, end=", ")
 """
-"""  a 
+"""   
 a.-2, -1, -3, -4     ==> 
 b.-2, -1, 0, 1, 2, 3, ==> 
 c.-2, -1, 0      ==> 
 d.-2, -3, -4,   ==> r h p r c  d d  t  m p  v  d 
-
 
 """
 # 11. What will be the output of the following Python code?
@@ -19,19 +18,20 @@ while i < 3:
 else:
     print(0)
 """
-""" c 
+"""  
 a. 0 1 2 3 0 
 b. 0 1 2 0   ==> p h r r c t d d v p  
 c. 0 1 2    
 d. error ===> 
 """
 # 13.What will be the output of the following Python code?
+
 """
 for i in range(10):
-    # if i == 5:
-        # break
-    # else :
-    print(i)
+    if i == 5:
+         break
+    else :
+        print(i)
 else:
     print("Here")
 """
@@ -107,7 +107,7 @@ sum == mul   ==> twin  number
 """
 
 # strong number :   145 : 
-n=int(input("enter the number  : "))
+"""n=int(input("enter the number  : "))
 digit=len(str(n))
 temp =n   #temp =145 
 sum= 0 
@@ -122,5 +122,5 @@ if sum ==n :
     print(n,"is a strong number")
 else :
     print(n,"is not a strong number")
-
+"""
 # next :  nested loop  ,  pattern  

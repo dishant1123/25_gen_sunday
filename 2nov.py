@@ -145,3 +145,18 @@ Output:-No of Words=5
 	    No of letters=26(including whitespace)
 	    Longest Word=program
 """
+"""
+s1="This is the python program"
+
+split_string  = s1.split()  # ['This', 'is', 'the', 'python', 'program']
+longest_word =max(split_string,key=len) 
+print(longest_word)
+"""
+# key =   ==> buit  in function  ==> len min max sorted 
+"""
+longest_wrod =""   
+for i in split_string:  # ['This', 'is', 'the', 'python', 'program'] 
+    if len(i)  > len(longest_word) :
+        longest_word =i 
+print(longest_word)
+"""

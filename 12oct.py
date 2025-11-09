@@ -131,11 +131,3 @@ b = {2, 3, 4}
 print(a & b)
 """
 
-# a =set([[1,2,3],[2,3,4]])
-for i  in range(10):
-    if i == 5:
-            continue
-    else:
-            print(i)
-else:
-      print("Here")  
