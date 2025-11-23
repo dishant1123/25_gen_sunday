@@ -200,4 +200,4 @@ creat  username , password : us = d123 ,pass =d@123
 2.exit 
 
 """
-
+# next topic : lambda , map , filter , reduce ==> random 
