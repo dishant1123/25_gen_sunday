@@ -140,7 +140,7 @@ h(name="chahat",age=18,city="gandhinagar",pincode=380013)
 5.display
 """
 
-d1={} 
+"""d1={} 
 
 def add():
     id =int(input("enter the id : "))
@@ -166,11 +166,89 @@ def update_emp ():
         print("emp updated")
     else :
         print("emp not found")
-        
+
+def search_emp():
+    serach_id= int(input("enter the  id you want to search : "))
+    if serach_id in d1:
+        print(d1[serach_id])
+    else :
+        print("emp not found")
+
+def display_emp():
+    for i ,j in d1.items() :
+        print(i,j)
 add()
 add()
+add()
+
 print(d1)
 delete_emp()
 print(d1)  # {1: {900000, 'chahat'}, 2: {700000, 'sita'}}
 update_emp()
 print(d1)
+search_emp()
+display_emp()
+"""
+
+# lambda : one liner  function  
+
+# def vs lambda  :
+
+"""
+syntax : 
+
+lambda arg : expression
+""" 
+
+"""def add(a,b):
+    return a+b 
+print(add(23,56))
+"""
+"""x = lambda a,b : a*b
+print(x(23,5))
+"""
+
+# built in func : min len max sorted sum 
+
+"""a =lambda x : sorted(x)
+print(a([1,20,3,4,5,6]))
+print(a((112,2,3,4,5,6)))
+print(a("my name is  krithik"))
+
+"""
+
+# conditional  statement  :
+
+"""def a(x,y):
+    if x>y :
+        return x 
+    else :
+        return y
+print(a(12,56))
+
+a =lambda x,y :  print("x is big") if x >y else print("y is  big") 
+a(12,7)
+
+b =lambda x ,y,z :max(x,y,z) 
+print(b(1,2,3))
+"""
+
+# filter  : 
+"""l1 =(1,2,3,4,5,6,7,8,9)
+a =tuple(filter(lambda x : x%2==0,l1))
+print(a)
+"""
+# map : 
+
+"""l1 =(10,2,3,40,5,6,78,8,9)
+a =list(map(lambda x : x*20,l1))
+print(a)
+
+"""
+
+# sort : 
+
+l1 =[[1,2],[-2,0],[4,-1]]
+
+l1.sort(key=lambda x :x[1])
+print(l1)

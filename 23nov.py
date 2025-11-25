@@ -171,7 +171,7 @@ Sorting the List of Tuples:
 Original list of dictionaries :
 [{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}]
 Sorting the List of dictionaries :
-[{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}]
+[{'make': 'Nokia', 'model': 216, 'color': 'Black'}, {'make': 'Samsung', 'model': 7, 'color': 'Blue'}, {'make': 'Mi Max', 'model': '2', 'color': 'Gold'}] 
 
 3. Write a Python program to filter the height and width of students, which are stored in a dictionary using lambda.
 
@@ -193,6 +193,6 @@ Remove all elements from 'list1' present in 'list2:
 Original lists:
 ['Red', 'Green', 'Blue', 'White', 'Black']
 Reverse strings of the said given list:
-['deR', 'neerG', 'eulB', 'etihW', 'kcalB']
+['deR', 'neerG', 'eulB', 'etihW', 'kcalB'] slicing  
 
 """
