@@ -62,3 +62,37 @@ display  :
     user win 
 function / normal  
 """
+
+# number  gueesing game  : 
+"""
+1,15 : 
+computer   guess the  number ==>6 
+
+"""
+"""print("welcome to number  guessing game")
+secret_number = r.randint(1,15)
+
+attempts =0 
+
+while True :
+    guess =int(input("guess the number : "))
+    attempts +=1 
+    
+    if guess < secret_number :
+        print("too low try again") 
+    elif guess > secret_number :
+        print("too high try again")
+    else :
+        print("you win !!!")
+        break 
+"""
+# last : ateempts  ==> com  print  
+
+# word gueesing  game  : 
+"""
+l1= ["python","java","c++","c","c#","java script","ruby","php","perl","python script"]
+
+computer  ==> "java"  
+max attempts  ==> 5 
+
+"""
