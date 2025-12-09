@@ -369,3 +369,117 @@ user =7
 l1=[1,1,2,2,3,4,5] 
 output  : [1,2,3,4,5]
 """
+# tuple : immutable  sequence element ==> not change in tuple
+
+"""
+t1=(102,2,3,4,5,6,7,8,9,10)
+print(t1)
+print(type(t1))
+
+t2=12,23,45,678,789,"raj"
+print(t2)
+print(type(t2))
+
+t3="",
+print(t3)
+print(type(t3)) 
+"""
+
+# built in function  : len min max sorted sum 
+
+"""
+t1=(102,2,3,4,5,6,7,8,9,10)
+print(len(t1))
+print(min(t1))
+print(max(t1))
+print(sorted(t1))  #asc to desc
+print(sorted(t1,reverse=True))  # desc to asc
+print(sum(t1))
+"""
+
+# slicing  : 
+
+# t1=(102,2,3,4,5,6,7,8,9,10)
+
+"""t1[4] ="chahat"
+print(t1)
+"""
+
+"""print(t1[3])
+print(t1[2:6]) # start index 2  end index 6
+print(t1[ 2:7 :2])
+print(t1[ : :-2])
+print(t1[ : :-1])
+"""
+
+# method  : 
+
+"""t1=(102,2,3,4,5,6,7,8,9,10,2)
+
+print(t1.count(2))
+print(t1.index(2))
+print(t1.index(2,2,20))
+
+"""
+
+# mcq : 
+
+"""t1 =(102,2,3,[4,5,6,7],8,9,10)
+#    0   1 2  3 
+t1[3]="raj"
+print(t1)
+"""
+"""
+a. error   # p ,r
+b. (102,2,3,[4,5,6,7],"raj",8,9,10)
+c. (102,2,3,[4,5,6,7,"raj"],8,9,10)  # r , h ,v ,c  ,p 
+d. (102,2,3,["raj",4,5,6,7],8,9,10)  # y 
+"""
+# task  : 1 
+"""
+input  : t1=(102,2,3,4,5,6,7,8,9,10)
+output : t1=(102,2,3,4,5,6,7,8,9,10,"honey")
+"""
+
+# task  :2  add value in last index .
+
+"""
+input  : t1=[(1,2,3),(4,5,6),(7,8,9)]
+output : t1=[(1,2,100),(4,5,100),(7,8,100)]
+"""
+# hw : 
+"""
+task : 7 Write a Python program to get the second largest number from a list.
+	input  : [1,2,3,4,10,9,6,7]
+	output : 9
+
+task : 8 
+	Write a Python program to find a list of integers with exactly two occurrences of nineteen and at least three occurrences of five.  count Return True otherwise False.
+	Input:
+	[19, 19, 15, 5, 3, 5, 5, 2]
+	Output:
+	True
+	Input:
+	[19, 15, 15, 5, 3, 3, 5, 2]
+	Output:
+	False
+	Input:
+	[19, 19, 5, 5, 5, 5, 5]
+	Output:
+	True
+task : 9 
+	Write a Python program that accepts a list of integers and calculates the length and the 
+	fifth element. Return true if the 
+	length of the list is 8 and the fifth element occurs thrice in the said list.
+	Input:
+	[19, 19, 15, 5, 5, 5, 1, 2]
+	Output:
+	True
+	Input:
+	[19, 15, 5, 7, 5, 5, 2]
+	Output:
+	False
+"""
+
+
+# dict : 
