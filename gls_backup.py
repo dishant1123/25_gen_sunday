@@ -571,8 +571,17 @@ print(d1)
 """
 ask user  to enter the name and marks and store in to the dict. 
 
-3 
 ram 90  sita 89  ravan 88 
 output  : {"ram":90,"sita":89,"ravan":88}
 
 """
+n=int(input("enter the  number  :"))
+d1={}
+for i in range(n):
+    name =input("enter the  name  :")
+    marks =int(input("enter the  marks  :"))
+    d1[name] =marks 
+print(d1)  #{'ram': 89, 'sita': 56, 'ravan': 99} 
+
+#task :2 above  dict sorted in basic of  marks . 
+#output : {"sita":56,"ram":89,"ravan":99,}
