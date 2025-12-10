@@ -481,5 +481,98 @@ task : 9
 	False
 """
 
+# dict : mutable  ==> key value  pair  ==> changes in dict 
 
-# dict : 
+"""
+d1={"phy":90 ,"maths":99}
+# phy ==> key value  ==> 90   maths ==> key  value  ==> 99  
+
+print(d1)
+print(type(d1))
+
+d2={90 :78,89 :"chahat"}
+print(d2)
+print(type(d2))
+"""
+
+# add in dict : 
+
+"""
+d1={"phy":90 ,"maths":99}
+d1["com"] =89 
+print(d1)
+"""
+
+# built in function  : len min max sorted sum
+
+"""d1={"45":90 ,"maths":99}
+
+print(len(d1))
+print(min(d1))
+print(max(d1))
+print(sorted(d1))  #asc to desc
+print(sorted(d1,reverse=True))  # desc to asc
+"""
+# slicing  : 
+
+"""
+d1={"phy":90 ,"maths":99}
+
+print(d1[0])  # not  possible in dict 
+"""
+# method  : 
+
+d1={"phy":90 ,"maths":99,"com":89}
+
+# d1.clear()
+# print(d1)
+
+# d2= d1.copy()
+# print(d2)
+
+# print(d1.get("phy")) 
+
+# print(d1.keys())
+# print(d1.values())
+# print(d1.items())
+
+"""l1=["honey","chahat"]
+# {"honey":100,"chahat":100}
+
+d2 =dict.fromkeys(l1,100)
+print(d2)
+
+d2["honey"]=200 
+print(d2)
+"""
+
+"""d1.pop("phy")
+print(d1)
+"""
+
+"""d1.popitem()  # last key value  remove in pop item. 
+print(d1)
+"""
+"""d1={"phy":90 ,"maths":99,"com":89}
+
+d2={"phy":23 ,"maths":56,"com":88,"eng":77}
+
+d1.update(d2)
+print(d1)
+"""
+"""
+d1={"phy":90 ,"maths":99,"com":89}
+
+d1.setdefault("s.s",99)
+print(d1)
+"""
+
+# task  :1 
+"""
+ask user  to enter the name and marks and store in to the dict. 
+
+3 
+ram 90  sita 89  ravan 88 
+output  : {"ram":90,"sita":89,"ravan":88}
+
+"""
