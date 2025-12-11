@@ -575,13 +575,126 @@ ram 90  sita 89  ravan 88
 output  : {"ram":90,"sita":89,"ravan":88}
 
 """
-n=int(input("enter the  number  :"))
+"""n=int(input("enter the  number  :"))
 d1={}
 for i in range(n):
     name =input("enter the  name  :")
     marks =int(input("enter the  marks  :"))
     d1[name] =marks 
 print(d1)  #{'ram': 89, 'sita': 56, 'ravan': 99} 
-
+"""
 #task :2 above  dict sorted in basic of  marks . 
 #output : {"sita":56,"ram":89,"ravan":99,}
+
+"""sorted_marks = sorted(d1.values())  # [56 ,89 , 99] 
+d2={}
+for i in sorted_marks:  # [56 ,89 , 99]
+    for  j ,k in d1.items():#{'ram': 89, 'sita': 56, 'ravan': 99} 
+        if i==k :
+            d2[j]=k
+print(d2)
+
+"""
+
+# task :3 
+"""
+input  : "missippissi"
+output  : {"m":1,"i":4,"s":4,"p":2}
+
+"""
+
+
+# set : mutable , unordered collection of unique elements , no duplicate elements
+
+"""
+s1={1,2,3,3,4,5,6,7,7,8,9,10,7j}
+print(s1)
+print(type(s1))
+"""
+# empty set : 
+
+"""s2= set()
+print(s2)
+print(type(s2))
+"""
+
+# built in function  : len min max sorted sum
+"""
+s1={100,2,3,3,4,5,6,7,7,8,9,10,900}
+
+print(len(s1))
+print(min(s1))
+print(max(s1))
+print(sorted(s1))  #asc to desc
+print(sorted(s1,reverse=True))  # desc to asc
+print(sum(s1))
+"""
+# slicing : not possible in set  bcz of unordered collection. 
+
+# s1={10,2,3,3,4,5,6,7,7,8,9,10,900}
+
+# s1.add(290)
+# print(s1)
+
+# s1.clear()
+# print(s1)
+
+# s2 =s1.copy()
+# print(s2)
+
+# s1={1,2,3,4}
+# s2={2,4,7,8}
+# s3={1,2,3,4,5,6,7,8,9,10}
+
+# print(s1.union(s2))
+# print(s1.intersection(s2))
+# print(s1.difference(s2)) # s1-s2 
+
+# print(s1.symmetric_difference(s2))
+
+"""print(s1.intersection(s2))
+s1.intersection_update(s2)
+print(s1)
+"""
+
+"""print(s1.difference(s2))
+print(s1)
+s1.difference_update(s2)
+print(s1)
+"""
+
+"""s1.symmetric_difference_update(s2)
+print(s1)
+"""
+
+# subset , superset , disjoint : 
+
+# s1={1,2,3,4}
+# s2={2,7,8}
+# s3={1,2,3,4,5,6,7,8,9,10}
+
+# print(s1.isdisjoint(s2))
+# print(s3.issuperset(s2))
+# print(s2.issubset(s3))
+
+s1={10,2,3,3,4,5,6,7,7,8,9,10,900}
+
+# s1.pop()
+# print(s1)
+
+# s1.discard(9000)
+# print(s1)
+
+# s1.remove(9000)
+# print(s1)
+
+# s2={"honey","chahat","raj","pratham"}
+# s1.update(s2)
+# print(s1)
+
+
+# frozenset : immutable , unordered collection of unique elements , no duplicate elements
+
+fz =frozenset({1,2,3,3,4,5,6,7,7,8,9,10,900})
+print(fz)
+print(type(fz))
