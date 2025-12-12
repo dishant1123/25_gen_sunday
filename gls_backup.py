@@ -695,6 +695,104 @@ s1={10,2,3,3,4,5,6,7,7,8,9,10,900}
 
 # frozenset : immutable , unordered collection of unique elements , no duplicate elements
 
+"""
 fz =frozenset({1,2,3,3,4,5,6,7,7,8,9,10,900})
 print(fz)
 print(type(fz))
+"""
+
+# function  : 
+"""
+type  : 
+1. no arg no return 
+2. no arg  with return 
+3. with arg  no return 
+4. with arg  with return
+"""
+#1 : 
+"""def add():  # add ==> funcation  
+    a=10 
+    b=90     # func intial part 
+    c=a+b
+    print(c)
+add()   # call 
+add()
+"""
+
+# 3 : 
+"""def add(a,b=0):
+    c=a+b
+    print(c) 
+add(12)
+add(12,90)
+# add("yug","shah")
+"""
+
+#2 :
+"""def add():
+    a=int(input("enter the  number  : "))
+    b=int(input("enter the  number  : "))
+    c = a+b
+    return c  
+print(add())
+"""
+#4 : 
+"""def add(a,b):
+    return a+b
+print(add(12,78))
+"""
+
+# local variable  :
+
+"""def x():
+    a=100   # local variable 
+    print(a)
+x()
+# print(a)  # not accessible  outside the  function 
+"""
+
+# global variable  : 
+
+"""
+x=100   # global variable
+def a():
+    print(x)
+a()
+print(x)  # accessible  outside the  function bcz of global variable
+"""
+
+# modify global variable  :
+
+"""x=100 
+def y():
+    global x 
+    x=900 
+    print(x)
+y()
+print(x)    
+"""
+
+# *args : only take num arg. 
+
+"""
+def add(*args):
+    return sum(args)
+print(add(12,90,78,56,45,34,2,14,7,0,78.90,8j,True))
+"""
+
+# loop  : 
+
+"""def y(*x):
+    sum =0 
+    for i in x :
+        sum =sum +i 
+    print(sum)
+y(1,2,3,4,5,6,7,8,9,10)
+"""
+
+# **kwargs : 
+
+def t(**kwargs):
+    for i ,j in kwargs.items():
+        print(f"{i} = {j}")
+t(name="honey",age=19,clg="GLS")
