@@ -68,3 +68,9 @@ print(a)
 """
 
 # package : 
+
+from mypackage import functions as f , hello as h
+
+print(f.mul(23,67))
+
+h.say_hello("rohit")
