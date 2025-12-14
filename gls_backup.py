@@ -792,7 +792,10 @@ y(1,2,3,4,5,6,7,8,9,10)
 
 # **kwargs : 
 
-def t(**kwargs):
+"""def t(**kwargs):
     for i ,j in kwargs.items():
         print(f"{i} = {j}")
 t(name="honey",age=19,clg="GLS")
+"""
+
+# amg  using  function  ==> with arg  with return 
