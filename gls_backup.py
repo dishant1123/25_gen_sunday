@@ -799,3 +799,147 @@ t(name="honey",age=19,clg="GLS")
 """
 
 # amg  using  function  ==> with arg  with return 
+
+# lambda :  one liner function. 
+
+"""
+syntax : 
+
+lambda arg : expression 
+"""
+"""
+def add(a,b):
+    return a+b 
+print(add(23,56))
+"""
+"""x=lambda a,b : a+b 
+print(x(23,56))
+"""
+
+# built in function  : len min max sorted sum 
+
+"""
+y=lambda x : sorted(x)
+print(y([1,2,67,89,33,56]))
+"""
+
+# conditional statement  : 
+
+"""def x():
+    a=int(input("enter the  number  :"))
+    b=int(input("enter the  number  :"))
+    if a>b :
+        print("a is greater than b")
+    else :
+        print("b is greater than a")
+x()
+"""
+"""
+z=lambda x,y : print("x is big") if x >y else print("y is big")
+a=int(input("enter the  number  :"))
+b=int(input("enter the  number  :"))
+z(a,b)
+"""
+
+# filter : 
+"""
+jan to dec  ===> fin trasc   ==> june 
+"""
+
+"""
+l1= [1,2,3,4,5,6,7,8,9]
+odd=[]
+even =[]
+for i in l1 :
+    if i %2==0:
+        even.append(i) 
+    else :
+        odd.append(i)
+print(even)
+print(odd)"""
+"""l1= [1,2,3,4,5,6,7,8,9]
+
+a =list(filter(lambda x : x%2==0,l1)) 
+b =tuple(filter(lambda x : x%2==1,l1)) 
+
+print(a)
+print(b)
+"""
+
+"""l1=[1221,141,678,900,567,676,989]
+
+a=list(filter(lambda x :str(x) ==str(x)[: : -1],l1)) 
+print(a)
+"""
+# l2=[]
+# for i in l1 : 
+#     if str(i) == str(i)[:  : -1]:
+#         l2.append(i)
+# print(l2) 
+
+# map  : 
+l1=[2,5,8,33,67,90]
+"""l=[]
+for i in l1 :
+    l2 =i*5 
+    l.append(l2)
+print(l)
+"""    
+"""
+a=list(map(lambda x :x *5,l1))
+print(a)
+"""
+
+"""def r(farg,*args):
+    sum =0 
+    for i in args :
+        sum =sum +i 
+    print(farg+sum)
+
+r(5,10)
+r(1,2,3,4,5)  
+"""  
+
+# file handling  : 
+
+"""
+1.read : exiting  file open 
+2.write : new file  create + exiting open ==> overwrite 
+3.append  :new file  create + exiting open ==> append 
+
+with  open  
+fclose()
+
+ 
+"""
+
+# w :  new file 
+
+"""
+with  open("honey.txt","w") as f : 
+    f.write("hello  honey.\n")
+    f.write("best friend name is chahat.\n")
+    f.write("dushman name is pratham.\n")
+    f.close()
+"""
+# w mode :  exiting file 
+"""
+with  open("honey.txt","w") as f : 
+    f.write("hello honey  how are you ??\n")
+    f.write("i am fine.\n")
+"""
+
+# a mode : 
+"""with  open("honey1.txt","a") as f : 
+    f.write("study in GLS.\n")
+    f.write("dream to meet virat kohli.\n")
+    f.close()
+"""
+
+# r mode : 
+
+with open("honey.txt","r") as f : 
+    # context =f.read()  # read all file
+    # context =f.readline()
+    context =f.readlines()  # read all file  output list.
+    print(context)
