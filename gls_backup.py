@@ -938,8 +938,63 @@ with  open("honey.txt","w") as f :
 
 # r mode : 
 
+"""
 with open("honey.txt","r") as f : 
     # context =f.read()  # read all file
     # context =f.readline()
     context =f.readlines()  # read all file  output list.
     print(context)
+"""
+
+#file handling  ==>  r+ ,w+ ,a+ :
+"""
+r+ : read and  write  both  ==> only exiting  file 
+w+ : write and read both  ==> new  create  + exiting  file  ==> overwrite . 
+a+ : write and read both  ==> new  create  + exiting  file  ==> append . 
+
+"""
+
+# r+ : 
+"""with  open("honey.txt","r+") as f :
+    f.write("yug shah.")
+    f.seek(0)  # cursor move to begining  of the file. 
+    context =f.read()
+    print(context)
+    f.close()
+# letter  overwrite  : yug shahy how are you ??
+"""    
+
+# w+ : new file  
+ 
+"""with open("yug.txt","w+") as f :
+    f.write("my name is yug shah.\n")
+    f.write("my age is 20.\n")
+    f.write("live in ahm.")
+    f.seek(0)
+    context =f.read()
+    print(context)
+    f.close()
+"""
+
+# w+ : exiting file
+"""
+with open("honey.txt","w+") as f :
+    f.write("my name is honey.\n")
+    f.write("my age is 20.\n")
+    f.write("live in ahm.")
+    f.seek(0)
+    context =f.read()
+    c =f.read()
+    print(c)
+    f.close()
+"""
+
+# a+ :
+with open("honey.txt","a+") as f :
+    # f.write("my name is pratham.\n")
+    # f.write("my age is 19.\n")
+    # f.write("live in gandhidham.")
+    f.seek(0)
+    context =f.read()
+    print(context)
+    f.close()
