@@ -990,7 +990,7 @@ with open("honey.txt","w+") as f :
 """
 
 # a+ :
-with open("honey.txt","a+") as f :
+"""with open("honey.txt","a+") as f :
     # f.write("my name is pratham.\n")
     # f.write("my age is 19.\n")
     # f.write("live in gandhidham.")
@@ -998,3 +998,82 @@ with open("honey.txt","a+") as f :
     context =f.read()
     print(context)
     f.close()
+"""
+# ask user to enter the  number  store  in to list and  print  in seprate file odd .txt and  even .txt
+
+"""l1=[] 
+n=int(input("enter the  number  :"))
+for i in range(n):
+    ele = int(input("enter the  ele  :"))
+    l1.append(ele)
+print(l1)  # l1 = [1,2,3,4,5,6,7]
+"""
+"""with  open("odd.txt","w") as f :
+    for i in l1: 
+        if i %2==1 :
+            f.write(str(i) +"\n") 
+
+with open("even.txt","w") as f :
+    for i in l1:
+        if i %2==0 :
+            f.write(str(i) +"\n")
+"""
+"""with  open("odd.txt","r") as f :
+    context =f.readlines()
+    print(context)
+"""
+
+# string : immutable  sequence element ==> not change in string
+
+"""
+s1="my name is honey."
+
+print(s1)
+print(type(s1))
+"""
+
+# built in function  : len min max sorted sum
+
+"""s1="my name is honey."
+print(len(s1))
+print(min(s1))
+print(max(s1))
+print(sorted(s1))  #asc to desc
+print(sorted(s1,reverse=True))  # desc to asc
+print(sum(s1))
+"""
+
+#concate :
+"""a="honey"
+b="vanjani"
+print(a+" "+b)
+"""
+
+# slicing  : 
+# index : 0    ==> l to  r 
+# neg  index : -1  ==> r to l 
+
+"""s1="my name is honey and i am 19 years old."
+
+print(s1[2])
+print(s1[1 :5])
+print(s1[-2])
+print(s1[1 :10 :2])
+print(s1[-2 : -8])
+print(s1[-2 : -8 :-1])
+print(s1[-8 :-2])
+"""
+# task  :1 
+"""
+input  : dishant dipakkumar shah 
+output  : d.d.shah 
+"""
+# task  :2 
+"""
+ask user to  enter the  two string  and swap  the first  three letter and vice versa. 
+
+input  a: "color"
+input  b: "full"
+output  a: "fulor"
+output  b: "coll"
+"""
