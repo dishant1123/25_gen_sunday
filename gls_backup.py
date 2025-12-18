@@ -1053,7 +1053,8 @@ print(a+" "+b)
 # index : 0    ==> l to  r 
 # neg  index : -1  ==> r to l 
 
-"""s1="my name is honey and i am 19 years old."
+"""
+s1="my name is honey and i am 19 years old."
 
 print(s1[2])
 print(s1[1 :5])
@@ -1076,4 +1077,46 @@ input  a: "color"
 input  b: "full"
 output  a: "fulor"
 output  b: "coll"
+"""
+
+# method  : 
+s1="My Name is honey and i am 19 years old."
+
+# print(s1.capitalize())
+# print(s1.upper())
+# print(s1.lower())
+# print(s1.title())
+# print(s1.swapcase())
+# print(s1.casefold())
+
+s2="happy diwali"
+# print(s2)
+# print(s2.center(50,"="))
+# print(s2.ljust(50,"="))
+# print(s2.rjust(50,"="))
+
+s1="my name is honey and i am 19 years old."
+
+# print(s1.count("i"))
+# print(s1.count("e"))
+# print(s1.count("e",12,30))
+
+# print(s1.index('i'))
+# print(s1.index('i',9,30))
+# print(s1.find('i'))
+# print(s1.find('i',9,30))
+
+# print(s1.rindex('i'))
+# print(s1.rindex('i',1,20))
+# print(s1.rfind('i'))
+# print(s1.rfind('i',1,20))
+
+"""
+task  :3 
+
+input  : i am going to goa next month. 
+output : first  o index:6
+        2 nd  o index :12 
+        3 rd  o index :15
+        4 th  o index :24
 """
