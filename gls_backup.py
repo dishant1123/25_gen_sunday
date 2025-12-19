@@ -1120,3 +1120,66 @@ output : first  o index:6
         3 rd  o index :15
         4 th  o index :24
 """
+
+"""def x ():
+    return 1 
+    return 2 
+    return 3
+
+print(x())
+"""
+
+"""def gen_x():
+    yield 1
+    yield 2
+    yield 3
+g=gen_x()
+print(next(g))
+print(next(g))
+print(next(g))
+"""
+
+#replace : 
+
+# s1="my name is honey and i am 19 years old."
+# s1="my name is ram. and my age is 19."
+# print(s1.replace("honey","chahat"))
+# print(s1.replace("a","A"))
+# print(s1.replace("ram",""))
+# print(s1.replace("my",""))
+# print(s1.replace("my","",-1))
+
+
+# s1="my name is honey and i am 19 years old."
+
+"""l1=["my","name","is","honey","and","i","am","19","years","old"]
+# my name is honey and i am 19 years old.
+
+s2=" ".join(l1)
+print(s2)
+"""
+
+s1="my name is honey and i is 19 years old."
+
+"""print(s1.split())
+print(s1.split("a"))
+print(s1.split("is"))
+print(s1.rsplit("a"))
+"""
+# print(s1.partition("is"))   # string  3 parts 
+# print(s1.partition("a"))   # string  3 parts 
+
+# print(s1.rpartition("a"))
+
+"""
+task :1  second "r"  replace with @
+
+input  : "restart"
+output : "resta@t"
+
+task :2 first  and  last space replace  with  "_".
+input  : "my name is  chahat and live in bhaat."
+output : "my_name is  chahat and live in_bhatt."
+
+
+"""
