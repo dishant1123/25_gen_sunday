@@ -1159,7 +1159,7 @@ s2=" ".join(l1)
 print(s2)
 """
 
-s1="my name is honey and i is 19 years old."
+# s1="my name is honey and i is 19 years old."
 
 """print(s1.split())
 print(s1.split("a"))
@@ -1181,5 +1181,55 @@ task :2 first  and  last space replace  with  "_".
 input  : "my name is  chahat and live in bhaat."
 output : "my_name is  chahat and live in_bhatt."
 
-
 """
+# s1=input("enter the  string  :")
+# print(s1.replace(" ","_",1)[ : :-1].replace(" ","_",1)[ :: -1]) 
+
+"""s2="restart" 
+s3= s2[0]
+modify = s3+s2[1:].replace(s3,"@")
+print(modify)
+"""
+
+# is  : 
+
+"""s1="my name is honey and i is 19 years old."
+
+print(s1.islower())
+"""
+
+"""s2="pratham"
+print(s2.isalpha())
+
+s3="pratham2522008"
+print(s3.isalnum())
+"""
+
+# isdigit , isnumeric , isdecimal : 
+
+"""s1="1234"
+print(s1.isdigit())
+print(s1.isnumeric())
+print(s1.isdecimal())
+"""
+"""s2="\u00B2"
+print(s2.isdigit())
+print(s2.isnumeric())   
+print(s2.isdecimal())
+"""
+"""s3="\u2153"
+print(s3.isdigit())
+print(s3.isnumeric())
+print(s3.isdecimal())
+"""
+"""
+"42"	Standard decimal digits (0-9)	True	True	True
+"\u00B2"	Superscript "²"	False	True	True
+"\u2153"	Vulgar Fraction "⅓"	False	False	True
+"Ⅷ"	Roman Numeral "Ⅷ"	False	False	True
+"12.5"	Float with a decimal point	False	False	False
+"-1"	Negative number	False	False	False
+"1a2"	Alphanumeric mix	False	False	False
+"""
+
+
