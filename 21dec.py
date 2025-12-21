@@ -58,7 +58,7 @@ s1.show()
 
 # ex :4 private :
 
-class vehicle :
+"""class vehicle :
     __name ="car"   # name , model ==> private data member
     __model ="toyota"
     
@@ -72,3 +72,55 @@ v.show()
 v.__name="honda"  # not change bcz of  private. 
 v.__model="civic"
 v.show()
+"""
+
+# protected : 
+
+"""class student :
+    _name ="rohit"   # name , age ==> protected data member
+    _age =21 
+
+class teacher(student):
+    def show(self):
+        print("name is  ==> ",self._name)
+        print("age is  ==> ",self._age)
+t=teacher()
+t.show()
+"""
+
+# bank  : 
+
+class bank :
+    def info(self):
+        self.branch=input("enter branch name : ")
+        self.account_number=int(input("enter account number : "))
+        self.balance =25000 
+    
+    def deposit(self,amt):
+        self.balance=self.balance+amt
+        print(f"after  deposit {amt} and your  balance is  ==> {self.balance}")
+    
+    def withdraw(self,amt):  # bal =30000  - 28000 ===> min 10000 
+        if self.balance- amt >=10000 :
+            self.balance=self.balance-amt
+            print(f"after  withdraw {amt} and your  balance is  ==> {self.balance}")
+        else :
+            print("not enough balance min balance required is  ==> rs.10000")
+    def check_balance(self):
+        print("your  final is balance   ==> ",self.balance)
+    
+    def display(self):
+        print("branch name is  ==> ",self.branch)
+        print("account number is  ==> ",self.account_number)
+        print("balance is  ==> ",self.balance)
+b=bank()
+print("BANK DETALIS :\n")
+b.info()
+b.display()
+b.deposit(10000)
+b.withdraw(18000)
+b.check_balance()
+
+"""
+1. log in  pin  ==> 3 attempt 
+"""
