@@ -123,4 +123,15 @@ b.check_balance()
 
 """
 1. log in  pin  ==> 3 attempt 
+
+task  :2 
+1. create  ==> user name  password create  
+2. login  ==> match 
+    1. deposit  
+    2. withdraw
+    3. check balance 
+    4. exit 
+    
+menu driven  :
+
 """
