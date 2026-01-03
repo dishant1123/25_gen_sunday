@@ -124,7 +124,7 @@ m.show()
 
 # ex:3 
 
-class employees :
+"""class employees :
     def __init__(self,name,salary):
         self.name =name
         self.salary =salary
@@ -141,3 +141,110 @@ class manager(employees):
         
 m=manager("rohit",100000)
 m.show()
+
+"""
+# mcq : 
+"""
+1.
+class Test:
+    def __init__(self):
+        self.x = 0
+
+class Derived_Test(Test):
+    def __init__(self):
+        self.y = 1
+b = Derived_Test()
+print(b.x,b.y)
+
+# ans : error 
+2. 
+
+class A():
+    def disp(self):
+        print("A disp()")
+class B(A):
+    pass
+obj = B()
+obj.disp() 
+
+asnwer : A disp()
+3.
+class Test:
+    def __init__(self):
+        self.x = 0
+class Derived_Test(Test):
+    def __init__(self):
+        Test.__init__(self)
+        self.y = 1
+b = Derived_Test()
+print(b.x,b.y)
+
+4. 
+class A:
+    def __init__(self,x):
+        self.x = x
+    def count(self,x):
+        self.x = self.x+1
+class B(A):
+    def __init__(self, y=0):
+        A.__init__(self, 3)
+        self.y = y
+    def count(self):
+        self.y += 1     
+obj = B()
+obj.count()
+print(obj.x, obj.y)
+
+answer :3 1 
+
+5. 
+class Demo:
+    def __init__(self):
+        self.x = 1
+    def change(self):
+        self.x = 10
+class Demo_derived(Demo):
+    def change(self):
+        self.x=self.x+1
+        return self.x
+obj = Demo_derived()
+print(obj.change())
+
+6. 
+class Demo:
+    def check(self):
+        return " Demo's check "  
+    def display(self):
+        print(self.check())
+
+class Demo_Derived(Demo):
+    def check(self):
+        return " Derived's check "
+
+Demo().display()
+Demo_Derived().display() 
+
+asnwer : demo check , derived check 
+
+7.
+class A:
+    def __init__(self,x=3):
+        self._x = x        
+class B(A):
+    def __init__(self):
+        super().__init__(5)
+    def display(self):
+        print(self._x)
+obj = B()
+obj.display() 
+"""
+class A:
+    def __init__(self,x=3):
+        self._x = x        
+class B(A):
+    def __init__(self):
+        super().__init__(5)
+    def display(self):
+        print(self._x)
+obj = B()
+obj.display() 
