@@ -86,7 +86,7 @@ all bank give interest
 but  diffrent bank  interest rate different
 """
 
-class bank : 
+"""class bank : 
     def interest(self,amt,rate):
         print(f"normal bank interest for rs.{amt} is rs.{amt*rate}")
 
@@ -103,7 +103,7 @@ b=baroda()
 
 h.interest(1000,5)
 b.interest(1000,5)
-
+"""
 # summary  : 
 """
                 method  overloading          method overriding  
@@ -116,4 +116,93 @@ runtime behaviour      input based                object based
 loading  :  ==> same work different  inputs
 riding  :  ==> same work different  objects 
         
+"""
+# operator  overloading : 
+"""
+ex :1 
+Create a class student with following member attributes: roll no, name, age and total marks. Create suitable methods for reading and printing member variables. Write a python program to overload ‘==’ operator to print the details of students having same marks. in python
+"""
+"""class student : 
+    def __init__(self,rollno,name,age,marks):
+        self.rollno = rollno
+        self.name = name
+        self.age = age
+        self.marks = marks
+        
+    def display(self):
+        print(f"roll no : {self.rollno}")
+        print(f"name : {self.name}")
+        print(f"age : {self.age}")
+        print(f"marks : {self.marks}")
+    # overload operator  :   ==
+    def __eq__(self, other):
+        if self.marks == other.marks:
+            print(f"both students have same marks")
+            self.display()
+            other.display()
+            return True
+        else :
+            print(f"both students have different marks")
+            return False
+        
+s1=student(101,"ram",20,100)
+s2=student(102,"sita",18,100)
+s1==s2
+"""       
+"""
+ex :2 
+Write a program to create a class called Data having “value” as its data member. Overload the (>) and the (<) operator for the class. Instantiate the class and compare the objects using _lt_ and _gt_.
+"""
+"""class data:
+    def __init__(self,value):
+        self.value = value
+        
+    def __gt__(self, other):
+        return self.value > other.value 
+    def __lt__(self, other):
+        return self.value < other.value
+    
+d1=data(25)
+d2=data(40)
+
+print("d1 > d2 :",d1 > d2)
+print("d1 < d2 :",d1 < d2)
+
+print("__gt__ d1 d2 :",d1 .__gt__(d2))
+print("__lt__ d1 d2 :",d1 .__lt__(d2))
+"""
+"""
+task :1 
+Write a Python program to find the Net Salary of an Employee using Inheritance, Encapsulation, and Polymorphism.
+
+Create three classes: Employee, Perks, and NetSalary.
+Requirements
+Employee Class :
+
+Use encapsulation (private data members).
+Data members: employee id, name, basic salary.
+
+Methods:
+    To get employee details from the user.
+    To display employee details.
+    To return basic salary.
+
+Create a method calculate_salary() that will be overridden (polymorphism).
+
+Perks Class (inherits Employee) :
+Calculate:
+    DA = 35% of basic salary
+    HRA = 17% of basic salary
+    PF = 12% of basic salary
+Method to display DA, HRA, PF.
+Override calculate_salary() method.
+
+NetSalary Class (inherits Perks) :
+
+Calculate total salary:
+    Net Salary = Basic Salary + DA + HRA − PF
+
+Display employee details, perks, and net salary.
+Demonstrate method overriding (runtime polymorphism).
+It is compulsory to create objects and demonstrate the methods with correct output.
 """
