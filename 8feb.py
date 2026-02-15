@@ -133,6 +133,7 @@ cursor = conn.cursor()
 '''
 # print("table created")
 
+'''
 cursor.execute("INSERT INTO student(name,age,department)VALUES ('rohit',20,'IT')")
 cursor.execute("INSERT INTO student(name,age,department)VALUES ('dev',21,'Finance')")
 cursor.execute("INSERT INTO student(name,age,department)VALUES ('Daksh',21,'Research')")
@@ -142,6 +143,15 @@ cursor.execute("INSERT INTO student(name,age,department)VALUES ('Jainam',26,'Aud
 
 conn.commit()
 print("data inserted")
+'''
 
+cursor.execute("SELECT * FROM student")
+
+rows = cursor.fetchall() 
+
+for i in rows :
+    print(i)
 cursor.close()
 conn.close()
+
+# next week  : 15 ,22 numpy  pandas 
