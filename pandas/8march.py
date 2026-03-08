@@ -1,5 +1,5 @@
 import  pandas as pd
-
+import numpy as np
 """
 use : 
 1. read csv  ==> create  update delete rename 
@@ -73,7 +73,7 @@ print(b)
 
 # read csv  :
 
-df =pd.read_csv("pandas\mckinsey.csv")
+# df =pd.read_csv("pandas\mckinsey.csv")
 """
 print(df)
 print(df.head())
@@ -87,6 +87,60 @@ print(df.isnull().sum())
 # print(df['country'])
 # print(df[['year','country']])
 
+"""
 df['next_year'] =df['year'] +3
 print(df.head())
 
+"""
+
+# loc : explicit index 
+# iloc  :  implicit index  
+
+df =pd.read_csv("pandas\mckinsey.csv")
+
+"""print(df.loc[1])
+print(df.iloc[1])
+
+slicing  : 
+print(df.loc[5:13])
+print(df.iloc[5:13])  # last excluded 
+
+print(df.iloc[2:5,1:4])
+print(df.loc[2:5,'year':'continent'])
+print(df.loc[2:5,['year','continent','population']])
+
+print(df.iloc[[1,4,6,8],[0,3,4]])
+print(df.iloc[1:10:2])
+print(df.loc[2:10:2])
+print(df.iloc[[2,7]])
+print(df.loc[[2,7]])
+
+print(df.iloc[-1])  # last  row  print  
+print(df.loc[-1])  # error 
+
+"""
+
+# set_index : 
+"""df.index =np.arange(1,1705)
+print(df)
+temp =df.set_index('country')
+print(temp)
+"""
+
+# year ==2002    ==> print  infomation 
+
+"""df= df.loc[df['year']==2002]
+print(df)
+"""
+
+# sorting : 
+
+# df= df.sort_values(by="life_exp")  # by default  : asc  to desc 
+# df= df.sort_values(by="gdp_cap",ascending=False)   
+# df= df.sort_values(by=['year','life_exp'])   
+# df= df.sort_values(by=['year','population'],ascending=False)
+df= df.sort_values(by=['year','gdp_cap'],ascending=[True,False])   
+
+
+# print(df.head(50))
+print(df.tail(50))
