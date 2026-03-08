@@ -106,7 +106,7 @@ except FileNotFoundError :
 
 # pip install mysql-connector-python   / pgadmin == > pip install psycopg2
 
-import mysql.connector 
+"""import mysql.connector 
 
 conn = mysql.connector.connect(
     user ="root",
@@ -117,7 +117,7 @@ conn = mysql.connector.connect(
 )
 
 cursor = conn.cursor()
-
+"""
 # cursor.execute("CREATE DATABASE IF NOT EXISTS 25_sunday_python")
 # print("database created")
 
@@ -145,7 +145,7 @@ conn.commit()
 print("data inserted")
 '''
 
-cursor.execute("SELECT * FROM student")
+"""cursor.execute("SELECT * FROM student")
 
 rows = cursor.fetchall() 
 
@@ -153,5 +153,15 @@ for i in rows :
     print(i)
 cursor.close()
 conn.close()
-
+"""
 # next week  : 15 ,22 numpy  pandas 
+
+"""from mypackage import functions as f ,hello as h 
+
+print(f.add(1,2))
+
+h.say_hello("ayush")
+"""
+
+
+

@@ -181,9 +181,21 @@ axis =0   ==> means   col wise sum
 axis =1   ==> means   row wise sum
 """
 
-a=np.array([[1,2,3],[4,5,6],[7,8,9]],dtype=int)
+"""a=np.array([[1,2,3],[4,5,6],[7,8,9]],dtype=int)
 
 print(a)
 print(np.sum(a))
 print(np.sum(a,axis=0))
 print(np.sum(a,axis=1))
+"""
+
+
+"""a= np.arange(1,49).reshape(4,4,3)
+print(a)
+"""
+"""a=np.array([1,2,3,4,5,6,7,8,9])
+print(a)
+b=np.where(a>5)
+print(b)
+"""
+
