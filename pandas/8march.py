@@ -144,3 +144,4 @@ df= df.sort_values(by=['year','gdp_cap'],ascending=[True,False])
 
 # print(df.head(50))
 print(df.tail(50))
+
