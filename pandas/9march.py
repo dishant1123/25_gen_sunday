@@ -69,9 +69,9 @@ df =movies.merge(directors,right_on="id",left_on="director_id")
 # c= df.loc[(df['day']=="Saturday") |(df['day']=="Sunday"),['title','director_name','vote_average','day'] ]
 # print(c)
 
-d=df.sort_values(by="popularity",ascending=False)[['title','popularity','vote_average',"director_name"]].head(10)
+# d=df.sort_values(by="popularity",ascending=False)[['title','popularity','vote_average',"director_name"]].head(10)
 
-print(d)
+# print(d)
 
 """
 1.Top 10 popular movies
@@ -87,4 +87,62 @@ print(d)
 Print number of movies directed by each director
 
 
+"""
+
+# groupby : 
+
+# director_wise =df.groupby("director_name").size()
+# print(director_wise)
+
+# director_wise.get_group("Christopher Nolan") . ngroups() , groups()
+# print(director_wise)
+
+
+#  1. Get me average of vote_average for each director
+
+"""director_wise=director_wise['vote_average'].mean()
+print(director_wise)
+"""
+
+# 2 .avg budget per director  : 
+
+"""
+result  = df. groupby("director_name")['budget'].mean()
+print(result)
+"""
+# 3. count  of  movies  per director : 
+
+# print(df.head())
+"""movie_count = df.groupby('director_name')['id_y'].count()
+print(movie_count)
+"""
+# 4 . multiple  aggregation :
+
+"""result  = df. groupby("director_name").agg(
+    {'budget':'mean',
+     'popularity':'max',}
+)
+print(result)
+"""
+"""
+query  : 
+SELECT director_name, AVG(budget)
+FROM movies
+GROUP BY director_name
+HAVING AVG(budget) > 100000000;
+"""
+
+"""result  = df. groupby("director_name")['budget'].mean()
+result =result[result>100000000]
+print(result)
+"""
+"""result  = df. groupby("director_name").filter(lambda x :x['budget'].mean()>100000000)
+print(result)
+"""
+
+"""
+SELECT director_name, COUNT(*)
+FROM movies
+GROUP BY director_name
+HAVING COUNT(*) > 3;
 """
